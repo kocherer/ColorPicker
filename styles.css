@@ -1,3 +1,16 @@
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
 .valueBox {
    width: 320px;
    height: 300px;
