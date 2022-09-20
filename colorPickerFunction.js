@@ -22,7 +22,7 @@ blue.addEventListener("keyup", function (event) {
       b = 0;
    box.style.backgroundColor = `rgba(${r}, ${g}, ${b}, ${l})`;
 });
-blue.addEventListener("keyup", function (event) {
+light.addEventListener("keyup", function (event) {
    l = light.value;
    if (!l)
       l = 0;
