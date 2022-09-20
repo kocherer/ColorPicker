@@ -1,10 +1,10 @@
-const red = document.getElementById('red');
-const green = document.getElementById('green');
-const blue = document.getElementById('blue');
-const box = document.querySelector('div.valueBox');
-const r = 0;
-const g = 0;
-const b = 0;
+let red = document.getElementById('red');
+let green = document.getElementById('green');
+let blue = document.getElementById('blue');
+let box = document.querySelector('div.valueBox');
+let r = 0;
+let g = 0;
+let b = 0;
 red.addEventListener("keyup", function (event) {
    r = red.value;
    if (!r)
