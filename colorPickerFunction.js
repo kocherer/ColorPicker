@@ -1,7 +1,7 @@
 let red = document.getElementById('red');
 let green = document.getElementById('green');
 let blue = document.getElementById('blue');
-let blue = document.getElementById('light');
+let light = document.getElementById('light');
 let box = document.querySelector('div.valueBox');
 let r = 0, g = 0, b = 0, l = 0;
 red.addEventListener("keyup", function (event) {
