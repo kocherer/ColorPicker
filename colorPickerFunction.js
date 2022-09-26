@@ -27,4 +27,5 @@
                          "Gamma = " + gamma + "\n" +
                          "Beta = " + beta + "\n" +
                          "Lumi = " + lumi);
+                
         }
