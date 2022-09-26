@@ -3,6 +3,38 @@
 <head>
    <meta charset="UTF-8">
    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <script>
+        var redInput,
+        greenInput,
+        blueInput,
+        sumRgb,
+        pho,
+        gamma,
+        beta,
+        lumi;
+
+        redInput = window.prompt("Enter your red value (0 - 1)");
+        greenInput = window.prompt("Enter your green value (0 - 1)");
+        blueInput = window.prompt("Enter your blue value (0 - 1)");
+        
+        redInput = parseInt(redInput);
+        greenInput = parseInt(greenInput);
+        blueInput = parseInt(blueInput);
+        convert(redInput,greenInput,blueInput);
+
+        function convert(redInput,greenInput,blueInput){
+            var sumRgb = redInput + greenInput + blueInput;
+            var pho = 1/sumRgb * (redInput, greenInput, blueInput);
+            var gamma = 1/sumRgb * (redInput, greenInput, blueInput);
+            var beta = 1/sumRgb * (redInput, greenInput, blueInput);
+            var lumi = Math.max(redInput, greenInput, blueInput);
+            window.alert("Your converted RGB:" + "\n" + 
+                         "Pho = " + pho + "\n" + 
+                         "Gamma = " + gamma + "\n" +
+                         "Beta = " + beta + "\n" +
+                         "Lumi = " + lumi);
+        }
+    </script>
 </head>
 <body>
    <h1>
@@ -10,16 +42,5 @@
    </h1>
    <p><a href = "https://github.com/kocherer/ColorPicker">Color Picker - GitHub</a></p>
    <p><a href = "https://www.pivotaltracker.com/n/projects/2597489">Color Picker - Pivotal Tracker</a><p>
-   <div class="valueBox"></div>
-   <h3>
-      Use the arrow up and down keys.
-   </h3>
-   <div class="input">
-      <input type="number" id="red">
-      <input type="number" id="green">
-      <input type="number" id="blue">
-      <input type="number" id="light">
-   </div>
-   <script src="colorPickerFunction.js"></script>
 </body>
 </html>
